@@ -19,10 +19,15 @@ class AppCoordinatorDependencyInjector {
     // MARK: - Main Navigation
     lazy var navigationController: UINavigationController = {
         let navigation = UINavigationController()
+        navigation.viewControllers.append(pokedexListController)
         return navigation
     }()
     
     // MARK: - View Controllers
+    lazy var pokedexListController: PokedexListViewController = {
+        let controller: PokedexListViewController = .init(withTableView: UITableView(frame: UIScreen.main.bounds, style: .plain))
+        return controller
+    }()
     
     // MARK: - View Models
     

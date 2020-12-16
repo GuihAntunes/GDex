@@ -12,22 +12,21 @@ struct Pokemon: Codable {
     let abilities : [Abilities]?
     let baseExperience : Int?
     let height : Int?
-    let heldItems : [String]?
     let forms: [APIResult]?
     let identifier : Int?
     let locationAreaEncounters : String?
     let moves : [Moves]?
     let name : String?
     let species : APIResult?
+    let sprites: Sprites?
     let stats : [Stats]?
     let types : [Types]?
     let weight : Int?
 
     enum CodingKeys: String, CodingKey {
-        case abilities, moves, name, species, stats, types, weight, forms, height
+        case abilities, moves, name, species, stats, types, weight, forms, height, sprites
         case identifier = "id"
         case baseExperience = "base_experience"
-        case heldItems = "held_items"
         case locationAreaEncounters = "location_area_encounters"
     }
 }

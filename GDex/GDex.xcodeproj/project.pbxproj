@@ -40,6 +40,12 @@
 		0EDFFAFB258AC1D7000507F3 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFAFA258AC1D7000507F3 /* Types.swift */; };
 		0EDFFB00258AC355000507F3 /* PokedexListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFAFF258AC355000507F3 /* PokedexListViewController.swift */; };
 		0EDFFB05258AC3D6000507F3 /* PokedexListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB04258AC3D6000507F3 /* PokedexListViewController+TableView.swift */; };
+		0EDFFB0B258AC543000507F3 /* PokedexEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB0A258AC543000507F3 /* PokedexEndpoint.swift */; };
+		0EDFFB10258AC5BE000507F3 /* Endpoint+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB0F258AC5BE000507F3 /* Endpoint+Constants.swift */; };
+		0EDFFB17258AC6E4000507F3 /* MainFilters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB16258AC6E4000507F3 /* MainFilters.swift */; };
+		0EDFFB1D258AC770000507F3 /* PokedexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB1C258AC770000507F3 /* PokedexService.swift */; };
+		0EDFFB25258AC7B0000507F3 /* PokedexRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB24258AC7B0000507F3 /* PokedexRepository.swift */; };
+		0EDFFB2A258ACEAE000507F3 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB29258ACEAE000507F3 /* Sprites.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +105,12 @@
 		0EDFFAFA258AC1D7000507F3 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		0EDFFAFF258AC355000507F3 /* PokedexListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexListViewController.swift; sourceTree = "<group>"; };
 		0EDFFB04258AC3D6000507F3 /* PokedexListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokedexListViewController+TableView.swift"; sourceTree = "<group>"; };
+		0EDFFB0A258AC543000507F3 /* PokedexEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexEndpoint.swift; sourceTree = "<group>"; };
+		0EDFFB0F258AC5BE000507F3 /* Endpoint+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Endpoint+Constants.swift"; sourceTree = "<group>"; };
+		0EDFFB16258AC6E4000507F3 /* MainFilters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFilters.swift; sourceTree = "<group>"; };
+		0EDFFB1C258AC770000507F3 /* PokedexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexService.swift; sourceTree = "<group>"; };
+		0EDFFB24258AC7B0000507F3 /* PokedexRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexRepository.swift; sourceTree = "<group>"; };
+		0EDFFB29258ACEAE000507F3 /* Sprites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +210,8 @@
 		0EDFFA70258AB7E4000507F3 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				0EDFFB1B258AC75B000507F3 /* Services */,
+				0EDFFB09258AC525000507F3 /* Endpoints */,
 				0EDFFACE258ABD91000507F3 /* Models */,
 				0EDFFA84258AB8A6000507F3 /* Requester.swift */,
 				0EDFFA83258AB8A6000507F3 /* Reachability.swift */,
@@ -210,6 +224,7 @@
 		0EDFFA71258AB7FB000507F3 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				0EDFFB24258AC7B0000507F3 /* PokedexRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -223,6 +238,7 @@
 				0EDFFAA9258ABA52000507F3 /* UIViewController+ReusableElements.swift */,
 				0EDFFAAE258ABA9B000507F3 /* Identifiable+Identifiers.swift */,
 				0EDFFAB3258ABACB000507F3 /* UITableView+QuickDeQueue.swift */,
+				0EDFFB0F258AC5BE000507F3 /* Endpoint+Constants.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -303,8 +319,34 @@
 				0EDFFAF0258AC135000507F3 /* Moves.swift */,
 				0EDFFAF5258AC18F000507F3 /* Stats.swift */,
 				0EDFFAFA258AC1D7000507F3 /* Types.swift */,
+				0EDFFB29258ACEAE000507F3 /* Sprites.swift */,
 			);
 			path = AppModels;
+			sourceTree = "<group>";
+		};
+		0EDFFB09258AC525000507F3 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				0EDFFB15258AC6D6000507F3 /* Filters */,
+				0EDFFB0A258AC543000507F3 /* PokedexEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		0EDFFB15258AC6D6000507F3 /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				0EDFFB16258AC6E4000507F3 /* MainFilters.swift */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		0EDFFB1B258AC75B000507F3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EDFFB1C258AC770000507F3 /* PokedexService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,18 +483,23 @@
 			files = (
 				0EDFFA36258AB75A000507F3 /* ViewController.swift in Sources */,
 				0EDFFA89258AB8A6000507F3 /* NetworkError.swift in Sources */,
+				0EDFFB25258AC7B0000507F3 /* PokedexRepository.swift in Sources */,
 				0EDFFA86258AB8A6000507F3 /* NetworkingProtocols.swift in Sources */,
 				0EDFFA96258AB98C000507F3 /* Filters+URLQueryItems.swift in Sources */,
 				0EDFFABF258ABBA9000507F3 /* AppCoordinatorDependencyInjector.swift in Sources */,
 				0EDFFABA258ABB3D000507F3 /* AppCoordinator.swift in Sources */,
 				0EDFFA88258AB8A6000507F3 /* Requester.swift in Sources */,
+				0EDFFB10258AC5BE000507F3 /* Endpoint+Constants.swift in Sources */,
 				0EDFFAA5258ABA10000507F3 /* FontsNames.swift in Sources */,
 				0EDFFAFB258AC1D7000507F3 /* Types.swift in Sources */,
 				0EDFFAA0258AB9FC000507F3 /* ImagesNames.swift in Sources */,
 				0EDFFA9B258AB9C6000507F3 /* UIColor+NamedColors.swift in Sources */,
+				0EDFFB17258AC6E4000507F3 /* MainFilters.swift in Sources */,
 				0EDFFAB4258ABACB000507F3 /* UITableView+QuickDeQueue.swift in Sources */,
 				0EDFFACA258ABD41000507F3 /* NavigationBarAppearance.swift in Sources */,
+				0EDFFB1D258AC770000507F3 /* PokedexService.swift in Sources */,
 				0EDFFAE1258AC049000507F3 /* Abilities.swift in Sources */,
+				0EDFFB2A258ACEAE000507F3 /* Sprites.swift in Sources */,
 				0EDFFB05258AC3D6000507F3 /* PokedexListViewController+TableView.swift in Sources */,
 				0EDFFAF6258AC18F000507F3 /* Stats.swift in Sources */,
 				0EDFFA76258AB833000507F3 /* LocalizableStrings.swift in Sources */,
@@ -464,6 +511,7 @@
 				0EDFFB00258AC355000507F3 /* PokedexListViewController.swift in Sources */,
 				0EDFFA32258AB75A000507F3 /* AppDelegate.swift in Sources */,
 				0EDFFA91258AB92A000507F3 /* String+Localizable.swift in Sources */,
+				0EDFFB0B258AC543000507F3 /* PokedexEndpoint.swift in Sources */,
 				0EDFFAF1258AC135000507F3 /* Moves.swift in Sources */,
 				0EDFFAD0258ABE55000507F3 /* APIResponse.swift in Sources */,
 			);
