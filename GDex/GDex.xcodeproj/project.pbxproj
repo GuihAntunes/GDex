@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,7 +13,6 @@
 		0EDFFA3B258AB75C000507F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDFFA3A258AB75C000507F3 /* Assets.xcassets */; };
 		0EDFFA3E258AB75C000507F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDFFA3C258AB75C000507F3 /* LaunchScreen.storyboard */; };
 		0EDFFA49258AB75D000507F3 /* GDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFA48258AB75D000507F3 /* GDexTests.swift */; };
-		0EDFFA54258AB75D000507F3 /* GDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFA53258AB75D000507F3 /* GDexUITests.swift */; };
 		0EDFFA76258AB833000507F3 /* LocalizableStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFA75258AB833000507F3 /* LocalizableStrings.swift */; };
 		0EDFFA7E258AB841000507F3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0EDFFA7D258AB841000507F3 /* Localizable.strings */; };
 		0EDFFA86258AB8A6000507F3 /* NetworkingProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFA82258AB8A6000507F3 /* NetworkingProtocols.swift */; };
@@ -48,17 +47,12 @@
 		0EDFFB2A258ACEAE000507F3 /* Sprites.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFB29258ACEAE000507F3 /* Sprites.swift */; };
 		0EE8791B258CCEF800FB41DA /* PokedexListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8791A258CCEF800FB41DA /* PokedexListViewModel.swift */; };
 		0EE87920258CD0FD00FB41DA /* PokedexListViewController+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EE8791F258CD0FD00FB41DA /* PokedexListViewController+View.swift */; };
+		65578A87D5E8F2AC0F960D57 /* Pods_GDex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD25C051CAF94EEB7881965C /* Pods_GDex.framework */; };
+		9AEA1C798036B9F65728760D /* Pods_GDexTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A11854B9B0E562D140150CF /* Pods_GDexTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		0EDFFA45258AB75D000507F3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0EDFFA26258AB75A000507F3 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0EDFFA2D258AB75A000507F3;
-			remoteInfo = GDex;
-		};
-		0EDFFA50258AB75D000507F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0EDFFA26258AB75A000507F3 /* Project object */;
 			proxyType = 1;
@@ -78,9 +72,6 @@
 		0EDFFA44258AB75D000507F3 /* GDexTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDexTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDFFA48258AB75D000507F3 /* GDexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDexTests.swift; sourceTree = "<group>"; };
 		0EDFFA4A258AB75D000507F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EDFFA4F258AB75D000507F3 /* GDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EDFFA53258AB75D000507F3 /* GDexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GDexUITests.swift; sourceTree = "<group>"; };
-		0EDFFA55258AB75D000507F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EDFFA75258AB833000507F3 /* LocalizableStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableStrings.swift; sourceTree = "<group>"; };
 		0EDFFA7D258AB841000507F3 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		0EDFFA82258AB8A6000507F3 /* NetworkingProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingProtocols.swift; sourceTree = "<group>"; };
@@ -115,6 +106,15 @@
 		0EDFFB29258ACEAE000507F3 /* Sprites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sprites.swift; sourceTree = "<group>"; };
 		0EE8791A258CCEF800FB41DA /* PokedexListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexListViewModel.swift; sourceTree = "<group>"; };
 		0EE8791F258CD0FD00FB41DA /* PokedexListViewController+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PokedexListViewController+View.swift"; sourceTree = "<group>"; };
+		406A4FA115E53D72411CC801 /* Pods-GDex.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDex.debug.xcconfig"; path = "Target Support Files/Pods-GDex/Pods-GDex.debug.xcconfig"; sourceTree = "<group>"; };
+		60F2753C7483DAEB308F60B9 /* Pods-GDex-GDexUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDex-GDexUITests.debug.xcconfig"; path = "Target Support Files/Pods-GDex-GDexUITests/Pods-GDex-GDexUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7A11854B9B0E562D140150CF /* Pods_GDexTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDexTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FCD940E6027B073D588670C /* Pods-GDexTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDexTests.release.xcconfig"; path = "Target Support Files/Pods-GDexTests/Pods-GDexTests.release.xcconfig"; sourceTree = "<group>"; };
+		A6D4B7DD379EB49D2682101A /* Pods-GDex.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDex.release.xcconfig"; path = "Target Support Files/Pods-GDex/Pods-GDex.release.xcconfig"; sourceTree = "<group>"; };
+		BC665CF90D30A62E8A96EE5B /* Pods-GDex-GDexUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDex-GDexUITests.release.xcconfig"; path = "Target Support Files/Pods-GDex-GDexUITests/Pods-GDex-GDexUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BD25C051CAF94EEB7881965C /* Pods_GDex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE75F682D17B2896772FDCC /* Pods_GDex_GDexUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GDex_GDexUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD285A502CAA4EB76536E9E /* Pods-GDexTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GDexTests.debug.xcconfig"; path = "Target Support Files/Pods-GDexTests/Pods-GDexTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65578A87D5E8F2AC0F960D57 /* Pods_GDex.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,13 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		0EDFFA4C258AB75D000507F3 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				9AEA1C798036B9F65728760D /* Pods_GDexTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +142,9 @@
 			children = (
 				0EDFFA30258AB75A000507F3 /* GDex */,
 				0EDFFA47258AB75D000507F3 /* GDexTests */,
-				0EDFFA52258AB75D000507F3 /* GDexUITests */,
 				0EDFFA2F258AB75A000507F3 /* Products */,
+				B26564C27448B72331F739AE /* Pods */,
+				67B8C766CC44088DEBB65583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -157,7 +153,6 @@
 			children = (
 				0EDFFA2E258AB75A000507F3 /* GDex.app */,
 				0EDFFA44258AB75D000507F3 /* GDexTests.xctest */,
-				0EDFFA4F258AB75D000507F3 /* GDexUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,15 +184,6 @@
 				0EDFFA4A258AB75D000507F3 /* Info.plist */,
 			);
 			path = GDexTests;
-			sourceTree = "<group>";
-		};
-		0EDFFA52258AB75D000507F3 /* GDexUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0EDFFA53258AB75D000507F3 /* GDexUITests.swift */,
-				0EDFFA55258AB75D000507F3 /* Info.plist */,
-			);
-			path = GDexUITests;
 			sourceTree = "<group>";
 		};
 		0EDFFA6F258AB7D7000507F3 /* Strings */ = {
@@ -387,6 +373,29 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		67B8C766CC44088DEBB65583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD25C051CAF94EEB7881965C /* Pods_GDex.framework */,
+				CDE75F682D17B2896772FDCC /* Pods_GDex_GDexUITests.framework */,
+				7A11854B9B0E562D140150CF /* Pods_GDexTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B26564C27448B72331F739AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				406A4FA115E53D72411CC801 /* Pods-GDex.debug.xcconfig */,
+				A6D4B7DD379EB49D2682101A /* Pods-GDex.release.xcconfig */,
+				60F2753C7483DAEB308F60B9 /* Pods-GDex-GDexUITests.debug.xcconfig */,
+				BC665CF90D30A62E8A96EE5B /* Pods-GDex-GDexUITests.release.xcconfig */,
+				DCD285A502CAA4EB76536E9E /* Pods-GDexTests.debug.xcconfig */,
+				7FCD940E6027B073D588670C /* Pods-GDexTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -394,9 +403,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EDFFA58258AB75D000507F3 /* Build configuration list for PBXNativeTarget "GDex" */;
 			buildPhases = (
+				96C4A842128B5CAF9E4AEA7C /* [CP] Check Pods Manifest.lock */,
 				0EDFFA2A258AB75A000507F3 /* Sources */,
 				0EDFFA2B258AB75A000507F3 /* Frameworks */,
 				0EDFFA2C258AB75A000507F3 /* Resources */,
+				72F35849B378995FBE21C963 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -411,6 +422,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EDFFA5B258AB75D000507F3 /* Build configuration list for PBXNativeTarget "GDexTests" */;
 			buildPhases = (
+				970712FC19EA7D31268BD504 /* [CP] Check Pods Manifest.lock */,
 				0EDFFA40258AB75D000507F3 /* Sources */,
 				0EDFFA41258AB75D000507F3 /* Frameworks */,
 				0EDFFA42258AB75D000507F3 /* Resources */,
@@ -424,24 +436,6 @@
 			productName = GDexTests;
 			productReference = 0EDFFA44258AB75D000507F3 /* GDexTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		0EDFFA4E258AB75D000507F3 /* GDexUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0EDFFA5E258AB75D000507F3 /* Build configuration list for PBXNativeTarget "GDexUITests" */;
-			buildPhases = (
-				0EDFFA4B258AB75D000507F3 /* Sources */,
-				0EDFFA4C258AB75D000507F3 /* Frameworks */,
-				0EDFFA4D258AB75D000507F3 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				0EDFFA51258AB75D000507F3 /* PBXTargetDependency */,
-			);
-			name = GDexUITests;
-			productName = GDexUITests;
-			productReference = 0EDFFA4F258AB75D000507F3 /* GDexUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -457,10 +451,6 @@
 						CreatedOnToolsVersion = 12.3;
 					};
 					0EDFFA43258AB75D000507F3 = {
-						CreatedOnToolsVersion = 12.3;
-						TestTargetID = 0EDFFA2D258AB75A000507F3;
-					};
-					0EDFFA4E258AB75D000507F3 = {
 						CreatedOnToolsVersion = 12.3;
 						TestTargetID = 0EDFFA2D258AB75A000507F3;
 					};
@@ -481,7 +471,6 @@
 			targets = (
 				0EDFFA2D258AB75A000507F3 /* GDex */,
 				0EDFFA43258AB75D000507F3 /* GDexTests */,
-				0EDFFA4E258AB75D000507F3 /* GDexUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -505,14 +494,71 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EDFFA4D258AB75D000507F3 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72F35849B378995FBE21C963 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GDex/Pods-GDex-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GDex/Pods-GDex-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GDex/Pods-GDex-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+		96C4A842128B5CAF9E4AEA7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDex-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		970712FC19EA7D31268BD504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GDexTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0EDFFA2A258AB75A000507F3 /* Sources */ = {
@@ -565,14 +611,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0EDFFA4B258AB75D000507F3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0EDFFA54258AB75D000507F3 /* GDexUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -580,11 +618,6 @@
 			isa = PBXTargetDependency;
 			target = 0EDFFA2D258AB75A000507F3 /* GDex */;
 			targetProxy = 0EDFFA45258AB75D000507F3 /* PBXContainerItemProxy */;
-		};
-		0EDFFA51258AB75D000507F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 0EDFFA2D258AB75A000507F3 /* GDex */;
-			targetProxy = 0EDFFA50258AB75D000507F3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -726,6 +759,7 @@
 		};
 		0EDFFA59258AB75D000507F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 406A4FA115E53D72411CC801 /* Pods-GDex.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -746,6 +780,7 @@
 		};
 		0EDFFA5A258AB75D000507F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6D4B7DD379EB49D2682101A /* Pods-GDex.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -766,6 +801,7 @@
 		};
 		0EDFFA5C258AB75D000507F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD285A502CAA4EB76536E9E /* Pods-GDexTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -788,6 +824,7 @@
 		};
 		0EDFFA5D258AB75D000507F3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FCD940E6027B073D588670C /* Pods-GDexTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -805,46 +842,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GDex.app/GDex";
-			};
-			name = Release;
-		};
-		0EDFFA5F258AB75D000507F3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7AH86L34EQ;
-				INFOPLIST_FILE = GDexUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guihsoft.GDexUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GDex;
-			};
-			name = Debug;
-		};
-		0EDFFA60258AB75D000507F3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7AH86L34EQ;
-				INFOPLIST_FILE = GDexUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.guihsoft.GDexUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GDex;
 			};
 			name = Release;
 		};
@@ -874,15 +871,6 @@
 			buildConfigurations = (
 				0EDFFA5C258AB75D000507F3 /* Debug */,
 				0EDFFA5D258AB75D000507F3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		0EDFFA5E258AB75D000507F3 /* Build configuration list for PBXNativeTarget "GDexUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0EDFFA5F258AB75D000507F3 /* Debug */,
-				0EDFFA60258AB75D000507F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
