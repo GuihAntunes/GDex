@@ -22,7 +22,7 @@ class PokedexRepository: PokedexRepositoryProtocol {
     
     func fetchPokemonList(withFilters filters: Filters, completion: @escaping RequesterCompletion<[Pokemon]>) {
         DispatchQueue.global().async { [weak self] in
-            self?.fetchPokemonList(withFilters: filters, completion: completion)
+            self?.pokedexService.fetchPokemonList(withFilters: filters, completion: completion)
         }
     }
     

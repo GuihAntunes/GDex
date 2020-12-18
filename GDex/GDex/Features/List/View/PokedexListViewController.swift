@@ -12,15 +12,18 @@ class PokedexListViewController: UIViewController {
 
     // MARK: - Properties
     var pokemonsTableView: UITableView
+    weak var viewModel: PokedexListViewModelProtocol?
     
     // MARK: - Initializers
-    init(withTableView tableView: UITableView) {
+    init(withTableView tableView: UITableView, andViewModel viewModel: PokedexListViewModelProtocol?) {
         self.pokemonsTableView = tableView
+        self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder: NSCoder) {
         self.pokemonsTableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
+        self.viewModel = nil
         super.init(coder: coder)
     }
     
@@ -28,6 +31,7 @@ class PokedexListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupController()
+        loadContent()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +40,10 @@ class PokedexListViewController: UIViewController {
     }
     
     // MARK: - Setup Methods
+    func loadContent() {
+        viewModel?.loadContent()
+    }
+    
     func setupController() {
         setupCollectionView()
         setupConstraints()
@@ -64,6 +72,7 @@ class PokedexListViewController: UIViewController {
     
     private func setupNavigationBar() {
         navigationController?.setNavigationBarHidden(false, animated: true)
+        title = LocalizableStrings.pokedexListTitle.localize()
     }
 
 }

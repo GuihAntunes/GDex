@@ -10,8 +10,10 @@
 // MARK: - View Elements Strings
 "confirmButton_title" = "Ok";
 "backButton_title" = "Back";
+"pokedexList_title" = "Pokédex";
 
 // MARK: - Error Messages
+"genericError_title" = "Error";
 "genericError_message" = "Unexpected error, please, try again later!";
 "releasedClassError_message" = "Class deinitialized!";
 "connectionError_message" = "Please, check your internet connection!";

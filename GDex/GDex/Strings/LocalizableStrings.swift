@@ -11,14 +11,16 @@ import Foundation
 enum LocalizableStrings: String {
     
     // MARK: - View Elements Strings
-    case ConfirmButtonTitle = "confirmButton_title"
-    case BackButtonTitle = "backButton_title"
+    case confirmButtonTitle = "confirmButton_title"
+    case backButtonTitle = "backButton_title"
+    case pokedexListTitle = "pokedexList_title"
     
     // MARK: - Error Messages
-    case GenericErrorMessage = "genericError_message"
-    case ReleasedClassErrorMessage = "releasedClassError_message"
-    case ConnectionErrorMessage = "connectionError_message"
-    case MappingErrorMessage = "mappingError_message"
+    case genericErrorTitle = "genericError_title"
+    case genericErrorMessage = "genericError_message"
+    case releasedClassErrorMessage = "releasedClassError_message"
+    case connectionErrorMessage = "connectionError_message"
+    case mappingErrorMessage = "mappingError_message"
     
     func localize() -> String {
         return self.rawValue.localize()

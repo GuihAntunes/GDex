@@ -11,7 +11,7 @@ import UIKit
 extension PokedexListViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return .init()
+        return viewModel?.pokemons.count ?? .init()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

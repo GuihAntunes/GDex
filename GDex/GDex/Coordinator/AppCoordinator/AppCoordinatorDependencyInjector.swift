@@ -25,12 +25,20 @@ class AppCoordinatorDependencyInjector {
     
     // MARK: - View Controllers
     lazy var pokedexListController: PokedexListViewController = {
-        let controller: PokedexListViewController = .init(withTableView: UITableView(frame: UIScreen.main.bounds, style: .plain))
+        let viewModel = pokedexViewModel
+        let controller: PokedexListViewController = .init(withTableView: UITableView(frame: UIScreen.main.bounds, style: .plain), andViewModel: viewModel)
+        viewModel.view = controller
         return controller
     }()
     
     // MARK: - View Models
+    lazy var pokedexViewModel: PokedexListViewModel = {
+        return .init(withRepository: pokedexRepository)
+    }()
     
     // MARK: - Repositories
+    lazy var pokedexRepository: PokedexRepository = {
+        return .init()
+    }()
     
 }

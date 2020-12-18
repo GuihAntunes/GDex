@@ -65,12 +65,16 @@ enum PokedexEndpoint: Endpoint {
     }
     
     var queryItems: [URLQueryItem]? {
+        var items: [URLQueryItem] = .init()
+        items.append(URLQueryItem(name: MainFilters.limit.rawValue, value: String(50)))
         switch self {
         case .list(let filters):
-            return filters.buildQueryItems()
+            items.append(contentsOf: filters.buildQueryItems())
         default:
             return nil
         }
+        
+        return items
     }
     
 }
