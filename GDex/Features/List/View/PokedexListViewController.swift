@@ -41,13 +41,13 @@ class PokedexListViewController: UIViewController {
     
     // MARK: - Setup Methods
     func loadContent() {
+        addBlurLoading()
         viewModel?.loadContent()
     }
     
     func setupController() {
         setupTableView()
         setupConstraints()
-        addBlurLoading()
     }
     
     private func setupTableView() {

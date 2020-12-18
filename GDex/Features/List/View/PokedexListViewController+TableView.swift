@@ -16,10 +16,22 @@ extension PokedexListViewController: UITableViewDelegate, UITableViewDataSource 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: PokedexTableViewCell = tableView.dequeueReusableCell(for: indexPath)
+        
         if let pokemon = viewModel?.getPokemon(forIndex: indexPath.row) {
             cell.setupCell(withName: pokemon.name, andPokemonImageURLString: pokemon.imageURLString)
         }
+        
+        loadMoreContentIfNeeded(indexPath.row)
+        
         return cell
+    }
+    
+    func loadMoreContentIfNeeded(_ currentPokemonIndex: Int) {
+        guard let pokemonsCount = viewModel?.pokemons.count else { return }
+        let shouldLoadMoreContent = currentPokemonIndex >= pokemonsCount - 1
+        if shouldLoadMoreContent {
+            loadContent()
+        }
     }
 
 }
