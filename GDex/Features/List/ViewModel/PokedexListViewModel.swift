@@ -12,17 +12,20 @@ protocol PokedexListViewModelProtocol: class {
     var pokemons: [Pokemon] { get }
     func getPokemon(forIndex index: Int) -> (name: String?, imageURLString: String?)
     func loadContent()
+    func pokemonSelected(atIndex index: Int)
 }
 
 class PokedexListViewModel: PokedexListViewModelProtocol {
     
     // MARK: - Properties
     var pokemons: [Pokemon] = .init()
+    var coordinator: AppCoordinatorProtocol
     var repository: PokedexRepositoryProtocol
     weak var view: PokedexListPresentable?
     
-    init(withRepository repository: PokedexRepositoryProtocol) {
+    init(withRepository repository: PokedexRepositoryProtocol, andCoordinator coordinator: AppCoordinatorProtocol) {
         self.repository = repository
+        self.coordinator = coordinator
     }
     
     // MARK: - PokedexListViewModelProtocol Methods
@@ -43,6 +46,11 @@ class PokedexListViewModel: PokedexListViewModelProtocol {
     func getPokemon(forIndex index: Int) -> (name: String?, imageURLString: String?) {
         let pokemon = pokemons[index]
         return (name: pokemon.name?.uppercaseFirstLetter(), imageURLString: pokemon.sprites?.frontDefault)
+    }
+    
+    func pokemonSelected(atIndex index: Int) {
+        let selectedPokemon = pokemons[index]
+        coordinator.presentNextStep(withModel: selectedPokemon)
     }
     
     // MARK: - Private Methods

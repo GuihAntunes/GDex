@@ -10,6 +10,8 @@ import UIKit
 
 extension PokedexListViewController: UITableViewDelegate, UITableViewDataSource {
     
+    // MARK: - UITableViewDataSource Methods
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.pokemons.count ?? .init()
     }
@@ -25,6 +27,14 @@ extension PokedexListViewController: UITableViewDelegate, UITableViewDataSource 
         
         return cell
     }
+    
+    // MARK: - UITableViewDelegate Methods
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel?.pokemonSelected(atIndex: indexPath.row)
+    }
+    
+    // MARK: - Support Methods
     
     func loadMoreContentIfNeeded(_ currentPokemonIndex: Int) {
         guard let pokemonsCount = viewModel?.pokemons.count else { return }

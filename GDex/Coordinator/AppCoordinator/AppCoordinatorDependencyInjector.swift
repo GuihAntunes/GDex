@@ -33,7 +33,7 @@ class AppCoordinatorDependencyInjector {
     
     // MARK: - View Models
     lazy var pokedexViewModel: PokedexListViewModel = {
-        return .init(withRepository: pokedexRepository)
+        return .init(withRepository: pokedexRepository, andCoordinator: appCoordinator)
     }()
     
     // MARK: - Repositories
