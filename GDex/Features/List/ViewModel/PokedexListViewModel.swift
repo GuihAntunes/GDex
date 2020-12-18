@@ -23,6 +23,7 @@ class PokedexListViewModel: PokedexListViewModelProtocol {
     var repository: PokedexRepositoryProtocol
     weak var view: PokedexListPresentable?
     
+    // MARK: - Initializers
     init(withRepository repository: PokedexRepositoryProtocol, andCoordinator coordinator: AppCoordinatorProtocol) {
         self.repository = repository
         self.coordinator = coordinator

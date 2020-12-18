@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomNavigationBar">
+            <connections>
+                <outlet property="backButton" destination="NXw-Y6-gVr" id="ueo-uj-QSs"/>
+                <outlet property="titleLabel" destination="iX4-M4-mEd" id="Uau-kb-zEc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXw-Y6-gVr">
+                    <rect key="frame" x="12" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="nKM-QI-642"/>
+                        <constraint firstAttribute="width" secondItem="NXw-Y6-gVr" secondAttribute="height" multiplier="1:1" id="vIa-qv-I3n"/>
+                    </constraints>
+                    <color key="tintColor" name="TextColor"/>
+                    <state key="normal" image="backArrow">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                    </state>
+                    <connections>
+                        <action selector="backButtonPressed:" destination="-1" eventType="touchUpInside" id="t7d-nG-ruG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="     " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iX4-M4-mEd">
+                    <rect key="frame" x="198" y="8" width="18.5" height="28"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="20"/>
+                    <color key="textColor" name="AccentColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" name="NavigationBarColor"/>
+            <constraints>
+                <constraint firstItem="NXw-Y6-gVr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3bl-EV-pcP"/>
+                <constraint firstItem="NXw-Y6-gVr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="fHm-yG-2l1"/>
+                <constraint firstItem="iX4-M4-mEd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="fzU-ib-6LY"/>
+                <constraint firstItem="iX4-M4-mEd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hdH-dx-np9"/>
+                <constraint firstItem="iX4-M4-mEd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="mM4-JM-3PM"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="iX4-M4-mEd" secondAttribute="bottom" constant="8" id="qaP-gL-NGV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58" y="100"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="backArrow" width="170.5" height="170.5"/>
+        <namedColor name="AccentColor">
+            <color red="0.26800000667572021" green="0.34099999070167542" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="NavigationBarColor">
+            <color red="0.76862745098039209" green="0.17290899160000001" blue="0.20782014730000001" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="TextColor">
+            <color red="0.93900001049041748" green="0.77799999713897705" blue="0.26600000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

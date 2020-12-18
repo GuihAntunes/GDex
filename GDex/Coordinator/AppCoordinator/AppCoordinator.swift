@@ -37,6 +37,9 @@ class AppCoordinator: AppCoordinatorProtocol {
     func presentNextStep<T: Codable>(withModel model: T? = nil) {
         switch state {
         case .list:
+            state = .detail
+//            injector.pokemonDetailsViewModel.pokemon = model as? Pokemon
+//            injector.navigationController.pushViewController(injector.pokemonDetailsController, animated: true)
             break
         case.detail:
             print("Last controller for this coordination flow!")

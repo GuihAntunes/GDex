@@ -72,7 +72,6 @@ class PokedexListViewController: UIViewController {
     
     private func setupNavigationBar() {
         navigationController?.setNavigationBarHidden(false, animated: true)
-        title = LocalizableStrings.pokedexListTitle.localize()
     }
 
 }
