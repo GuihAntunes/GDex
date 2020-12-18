@@ -34,7 +34,18 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
         setupController()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        prepareUI()
+    }
+    
     // MARK: - Setup Methods
+    func prepareUI() {
+        pokemonTableView.reloadData()
+        customNavigationBar.setTitle(viewModel?.pokemon?.name ?? .init())
+        navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     func setupController() {
         view.backgroundColor = UIColor(named: UIColor.AppColors.navigationBarColor.rawValue)
         setupTableView()
@@ -48,21 +59,19 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
         pokemonTableView.register(UINib(nibName: PokemonTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: PokemonTableViewCell.reuseIdentifier)
         pokemonTableView.translatesAutoresizingMaskIntoConstraints = false
         pokemonTableView.estimatedRowHeight = 80
+        pokemonTableView.separatorStyle = .none
         view.addSubview(pokemonTableView)
-//        setupTableHeaderView()
     }
     
     func setupNavigationBar() {
-        navigationController?.setNavigationBarHidden(true, animated: true)
         customNavigationBar.translatesAutoresizingMaskIntoConstraints = false
         customNavigationBar.delegate = self
-        customNavigationBar.setTitle(viewModel?.pokemon?.name ?? .init())
         view.addSubview(customNavigationBar)
     }
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            customNavigationBar.topAnchor.constraint(equalToSystemSpacingBelow: view.layoutMarginsGuide.topAnchor, multiplier: 0),
+            customNavigationBar.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 0),
             customNavigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             customNavigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             customNavigationBar.heightAnchor.constraint(equalToConstant: 44),

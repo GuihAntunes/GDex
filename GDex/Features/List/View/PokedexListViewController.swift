@@ -55,6 +55,7 @@ class PokedexListViewController: UIViewController {
         pokemonsTableView.dataSource = self
         pokemonsTableView.delegate = self
         pokemonsTableView.translatesAutoresizingMaskIntoConstraints = false
+        pokemonsTableView.separatorStyle = .none
         view.addSubview(pokemonsTableView)
         view.bringSubviewToFront(pokemonsTableView)
     }

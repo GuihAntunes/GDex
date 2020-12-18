@@ -26,7 +26,7 @@
                         <constraint firstAttribute="height" constant="44" id="nKM-QI-642"/>
                         <constraint firstAttribute="width" secondItem="NXw-Y6-gVr" secondAttribute="height" multiplier="1:1" id="vIa-qv-I3n"/>
                     </constraints>
-                    <color key="tintColor" name="TextColor"/>
+                    <color key="tintColor" name="AccentColor"/>
                     <state key="normal" image="backArrow">
                         <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                     </state>
@@ -42,7 +42,7 @@
                 </label>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" name="NavigationBarColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="NXw-Y6-gVr" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3bl-EV-pcP"/>
                 <constraint firstItem="NXw-Y6-gVr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="fHm-yG-2l1"/>
@@ -59,12 +59,6 @@
         <image name="backArrow" width="170.5" height="170.5"/>
         <namedColor name="AccentColor">
             <color red="0.26800000667572021" green="0.34099999070167542" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="NavigationBarColor">
-            <color red="0.76862745098039209" green="0.17290899160000001" blue="0.20782014730000001" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
-        </namedColor>
-        <namedColor name="TextColor">
-            <color red="0.93900001049041748" green="0.77799999713897705" blue="0.26600000262260437" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

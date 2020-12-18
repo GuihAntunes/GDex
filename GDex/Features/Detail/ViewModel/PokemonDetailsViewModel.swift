@@ -46,6 +46,7 @@ class PokemonDetailsViewModel: PokemonDetailsViewModelProtocol {
     
     // MARK: - Private Methods
     func generatePokemonDetails() {
+        pokemonDetails.removeAll()
         let nameDetail: PokemonDetail = (detailTitle: .init(), detailImageURLString: nil, detailDescription: pokemon?.name)
         pokemonDetails.append(nameDetail)
         
@@ -74,7 +75,5 @@ class PokemonDetailsViewModel: PokemonDetailsViewModelProtocol {
         let movesDescription = moves?.compactMap({ $0.move?.name }).reduce("", { $0 == "" ? $1 : $0 + "," + $1 })
         let movesDetail: PokemonDetail = (detailTitle: .init(), detailImageURLString: nil, detailDescription: movesDescription)
         pokemonDetails.append(movesDetail)
-        
-        
     }
 }
