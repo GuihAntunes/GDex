@@ -1,0 +1,16 @@
+PODS:
+  - MapleBacon (6.1.1)
+
+DEPENDENCIES:
+  - MapleBacon
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - MapleBacon
+
+SPEC CHECKSUMS:
+  MapleBacon: 05a421f5136fa2a75c6f94d0d617a9520534f220
+
+PODFILE CHECKSUM: 5905da1905d04d14e604ba692e27401584b573bd
+
+COCOAPODS: 1.10.0

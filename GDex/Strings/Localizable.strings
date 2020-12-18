@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  GDex
+
+  Created by Guilherme Antunes Ferreira on 16/12/2020.
+  Copyright © 2020 Guihsoft. All rights reserved.
+ 
+*/
+
+// MARK: - View Elements Strings
+"confirmButton_title" = "Ok";
+"backButton_title" = "Back";
+"pokedexList_title" = "Pokédex";
+"pokemonDetails_nameTitle" = "Name:";
+"pokemonDetails_weightTitle" = "Weight:";
+"pokemonDetails_experienceTitle" = "Experience:";
+"pokemonDetails_abilitiesTitle" = "Abilities:";
+"pokemonDetails_shinyTitle" = "Shiny Form:";
+"pokemonDetails_typesTitle" = "Types:";
+"pokemonDetails_movesTitle" = "Moves:";
+
+// MARK: - Error Messages
+"genericError_title" = "Error";
+"genericError_message" = "Unexpected error, please, try again later!";
+"releasedClassError_message" = "Class deinitialized!";
+"connectionError_message" = "Please, check your internet connection!";
+"mappingError_message" = "Error catched when parsing model %@!";
