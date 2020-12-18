@@ -45,15 +45,15 @@ class PokedexListViewController: UIViewController {
     }
     
     func setupController() {
-        setupCollectionView()
+        setupTableView()
         setupConstraints()
         addBlurLoading()
     }
     
-    private func setupCollectionView() {
+    private func setupTableView() {
+        pokemonsTableView.register(UINib(nibName: PokedexTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: PokedexTableViewCell.reuseIdentifier)
         pokemonsTableView.dataSource = self
         pokemonsTableView.delegate = self
-        pokemonsTableView.backgroundColor = UIColor(named: UIColor.AppColors.appBackgroundColor.rawValue)
         pokemonsTableView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(pokemonsTableView)
         view.bringSubviewToFront(pokemonsTableView)

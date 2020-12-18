@@ -10,6 +10,7 @@ import Foundation
 
 protocol PokedexListViewModelProtocol: class {
     var pokemons: [Pokemon] { get }
+    func getPokemon(forIndex index: Int) -> (name: String?, imageURLString: String?)
     func loadContent()
 }
 
@@ -35,9 +36,20 @@ class PokedexListViewModel: PokedexListViewModelProtocol {
                 return
             }
             
-            self?.pokemons.append(contentsOf: fetchedPokemons)
-            self?.view?.reloadList()
+            self?.handleResponse(fetchedPokemons)
         }
+    }
+    
+    func getPokemon(forIndex index: Int) -> (name: String?, imageURLString: String?) {
+        let pokemon = pokemons[index]
+        return (name: pokemon.name?.uppercaseFirstLetter(), imageURLString: pokemon.sprites?.frontDefault)
+    }
+    
+    // MARK: - Private Methods
+    func handleResponse(_ fetchedPokemons: [Pokemon]) {
+        pokemons.append(contentsOf: fetchedPokemons)
+        pokemons.sort(by: { $0.identifier < $1.identifier })
+        view?.reloadList()
     }
     
 }

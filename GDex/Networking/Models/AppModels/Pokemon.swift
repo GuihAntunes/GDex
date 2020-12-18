@@ -13,7 +13,7 @@ struct Pokemon: Codable {
     let baseExperience : Int?
     let height : Int?
     let forms: [APIResult]?
-    let identifier : Int?
+    let identifier : Int
     let locationAreaEncounters : String?
     let moves : [Moves]?
     let name : String?

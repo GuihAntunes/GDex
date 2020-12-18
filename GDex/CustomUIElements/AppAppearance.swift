@@ -1,5 +1,5 @@
 //
-//  NavigationBarAppearance.swift
+//  AppAppearance.swift
 //  GDex
 //
 //  Created by Guilherme Antunes Ferreira on 16/12/2020.
@@ -8,7 +8,12 @@
 
 import UIKit
 
-class NavigationBarAppearance {
+class AppAppearance {
+    
+    static func setAppAppearance() {
+        setAppBackgroundColor()
+        setAppNavigationBarAppearance()
+    }
     
     static func setAppNavigationBarAppearance() {
         UINavigationBar.appearance().barTintColor = UIColor(named: UIColor.AppColors.navigationBarColor.rawValue)
@@ -17,6 +22,12 @@ class NavigationBarAppearance {
             NSAttributedString.Key.font: UIFont(name: FontsNames.AvenirNextCondensed.rawValue, size: 20) ?? UIFont.systemFont(ofSize: 20)
         ]
         UINavigationBar.appearance().prefersLargeTitles = false
+    }
+    
+    static func setAppBackgroundColor() {
+        let subviewsBackgroundColor = UIColor(named: UIColor.AppColors.appBackgroundColor.rawValue)
+        UITableView.appearance().backgroundColor = subviewsBackgroundColor
+        UITableViewCell.appearance().backgroundColor = .clear
     }
     
 }
