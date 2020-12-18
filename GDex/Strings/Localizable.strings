@@ -11,6 +11,13 @@
 "confirmButton_title" = "Ok";
 "backButton_title" = "Back";
 "pokedexList_title" = "Pokédex";
+"pokemonDetails_nameTitle" = "Name:";
+"pokemonDetails_speciesTitle" = "Species:";
+"pokemonDetails_experienceTitle" = "Experience:";
+"pokemonDetails_abilitiesTitle" = "Abilities:";
+"pokemonDetails_shinyTitle" = "Shiny Form:";
+"pokemonDetails_typesTitle" = "Types:";
+"pokemonDetails_movesTitle" = "Moves:";
 
 // MARK: - Error Messages
 "genericError_title" = "Error";

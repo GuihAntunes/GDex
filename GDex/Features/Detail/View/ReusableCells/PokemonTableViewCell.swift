@@ -18,8 +18,8 @@ class PokemonTableViewCell: UITableViewCell {
     
     // MARK: - Setup Methods
     func setupCell(withDetailTitle title: String, imageURLString: String?, andDetailDescription detailDescription: String?) {
-        pokemonDetailDescriptionLabel?.isHidden = detailDescription != nil
-        pokemonDetailImageView?.isHidden = imageURLString != nil
+        pokemonDetailDescriptionLabel?.isHidden = detailDescription == nil
+        pokemonDetailImageView?.isHidden = imageURLString == nil
         
         if let string = imageURLString {
             pokemonDetailImageView?.setImage(with: URL(string: string))

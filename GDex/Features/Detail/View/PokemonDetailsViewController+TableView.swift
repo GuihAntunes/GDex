@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension PokemonDetailsViewController: UITableViewDataSource {
+extension PokemonDetailsViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return viewModel?.pokemonDetails.count ?? .init()
@@ -21,4 +21,9 @@ extension PokemonDetailsViewController: UITableViewDataSource {
         }
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
+    }
+    
 }

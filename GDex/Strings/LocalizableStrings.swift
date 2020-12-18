@@ -14,6 +14,13 @@ enum LocalizableStrings: String {
     case confirmButtonTitle = "confirmButton_title"
     case backButtonTitle = "backButton_title"
     case pokedexListTitle = "pokedexList_title"
+    case pokemonDetailsNameTitle = "pokemonDetails_nameTitle"
+    case pokemonDetailsSpeciesTitle = "pokemonDetails_speciesTitle"
+    case pokemonDetailsExperienceTitle = "pokemonDetails_experienceTitle"
+    case pokemonDetailsAbilitiesTitle = "pokemonDetails_abilitiesTitle"
+    case pokemonDetailsShinyTitle = "pokemonDetails_shinyTitle"
+    case pokemonDetailsTypesTitle = "pokemonDetails_typesTitle"
+    case pokemonDetailsMovesTitle = "pokemonDetails_movesTitle"
     
     // MARK: - Error Messages
     case genericErrorTitle = "genericError_title"

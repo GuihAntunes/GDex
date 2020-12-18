@@ -42,7 +42,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
     // MARK: - Setup Methods
     func prepareUI() {
         pokemonTableView.reloadData()
-        customNavigationBar.setTitle(viewModel?.pokemon?.name ?? .init())
+        customNavigationBar.setTitle(viewModel?.pokemonName ?? .init())
         navigationController?.setNavigationBarHidden(true, animated: true)
     }
     
@@ -56,6 +56,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
     // MARK: - Setup Methods
     private func setupTableView() {
         pokemonTableView.dataSource = self
+        pokemonTableView.delegate = self
         pokemonTableView.register(UINib(nibName: PokemonTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: PokemonTableViewCell.reuseIdentifier)
         pokemonTableView.translatesAutoresizingMaskIntoConstraints = false
         pokemonTableView.estimatedRowHeight = 80
