@@ -14,7 +14,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
     weak var viewModel: PokemonDetailsViewModelProtocol?
     var pokemonTableView: UITableView
     lazy var customNavigationBar = CustomNavigationBar(frame: CGRect(origin: .zero, size: CGSize(width: view.frame.size.width, height: 44)))
-    lazy var navigationBarHeightConstraint = customNavigationBar.heightAnchor.constraint(equalToConstant: 44)
+    lazy var navigationBarHeightConstraint = customNavigationBar.heightAnchor.constraint(equalToConstant: 0)
     
     // MARK: - Initializers
     init(withTableView tableView: UITableView, andViewModel viewModel: PokemonDetailsViewModelProtocol?) {
@@ -40,11 +40,28 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
         prepareUI()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        prepareDismiss()
+    }
+    
     // MARK: - Setup Methods
     func prepareUI() {
+        view.backgroundColor = UIColor(named: UIColor.AppColors.appBackgroundColor.rawValue)
         pokemonTableView.reloadData()
         customNavigationBar.setTitle(viewModel?.pokemonName ?? .init())
-        navigationController?.setNavigationBarHidden(true, animated: false)
+        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationBarHeightConstraint.constant = 44
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func prepareDismiss() {
+        navigationBarHeightConstraint.constant = 0
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
     }
     
     func setupController() {
@@ -83,7 +100,9 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
             pokemonTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
         
-        view.layoutIfNeeded()
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
     }
     
     // MARK: CustomNavigationBarDelegate Methods
