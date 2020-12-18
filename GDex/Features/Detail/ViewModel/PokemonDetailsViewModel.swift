@@ -52,8 +52,8 @@ class PokemonDetailsViewModel: PokemonDetailsViewModelProtocol {
         let nameDetail: PokemonDetail = (detailTitle: LocalizableStrings.pokemonDetailsNameTitle.localize(), detailImageURLString: nil, detailDescription: pokemon?.name?.uppercaseFirstLetter())
         pokemonDetails.append(nameDetail)
         
-        let speciesDetail: PokemonDetail = (detailTitle: LocalizableStrings.pokemonDetailsSpeciesTitle.localize(), detailImageURLString: nil, detailDescription: pokemon?.species?.name?.uppercaseFirstLetter())
-        pokemonDetails.append(speciesDetail)
+        let weightDetail: PokemonDetail = (detailTitle: LocalizableStrings.pokemonDetailsWeightTitle.localize(), detailImageURLString: nil, detailDescription: pokemon?.weight?.description)
+        pokemonDetails.append(weightDetail)
         
         let experienceDetail: PokemonDetail = (detailTitle: LocalizableStrings.pokemonDetailsExperienceTitle.localize(), detailImageURLString: nil, detailDescription: pokemon?.baseExperience?.description)
         pokemonDetails.append(experienceDetail)

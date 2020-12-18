@@ -15,7 +15,7 @@ enum LocalizableStrings: String {
     case backButtonTitle = "backButton_title"
     case pokedexListTitle = "pokedexList_title"
     case pokemonDetailsNameTitle = "pokemonDetails_nameTitle"
-    case pokemonDetailsSpeciesTitle = "pokemonDetails_speciesTitle"
+    case pokemonDetailsWeightTitle = "pokemonDetails_weightTitle"
     case pokemonDetailsExperienceTitle = "pokemonDetails_experienceTitle"
     case pokemonDetailsAbilitiesTitle = "pokemonDetails_abilitiesTitle"
     case pokemonDetailsShinyTitle = "pokemonDetails_shinyTitle"

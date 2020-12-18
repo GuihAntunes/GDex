@@ -14,6 +14,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
     weak var viewModel: PokemonDetailsViewModelProtocol?
     var pokemonTableView: UITableView
     lazy var customNavigationBar = CustomNavigationBar(frame: CGRect(origin: .zero, size: CGSize(width: view.frame.size.width, height: 44)))
+    lazy var navigationBarHeightConstraint = customNavigationBar.heightAnchor.constraint(equalToConstant: 44)
     
     // MARK: - Initializers
     init(withTableView tableView: UITableView, andViewModel viewModel: PokemonDetailsViewModelProtocol?) {
@@ -43,7 +44,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
     func prepareUI() {
         pokemonTableView.reloadData()
         customNavigationBar.setTitle(viewModel?.pokemonName ?? .init())
-        navigationController?.setNavigationBarHidden(true, animated: true)
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
     
     func setupController() {
@@ -75,7 +76,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
             customNavigationBar.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 0),
             customNavigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             customNavigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            customNavigationBar.heightAnchor.constraint(equalToConstant: 44),
+            navigationBarHeightConstraint,
             pokemonTableView.topAnchor.constraint(equalTo: customNavigationBar.bottomAnchor),
             pokemonTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             pokemonTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),

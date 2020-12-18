@@ -72,7 +72,7 @@ class PokedexListViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        navigationController?.setNavigationBarHidden(false, animated: true)
+        navigationController?.setNavigationBarHidden(false, animated: false)
     }
 
 }
