@@ -12,6 +12,7 @@ typealias PokemonDetail = (detailTitle: String, detailImageURLString: String?, d
 
 protocol PokemonDetailsViewModelProtocol: class {
     var pokemonName: String { get }
+    var pokemonImage: String { get }
     var pokemonDetails: [PokemonDetail] { get }
     func getPokemonDetail(forIndex index: Int) -> PokemonDetail
     func didDismissScreen()
@@ -21,11 +22,13 @@ class PokemonDetailsViewModel: PokemonDetailsViewModelProtocol {
     
     // MARK: - Properties
     var pokemonName: String = .init()
+    var pokemonImage: String = .init()
     var pokemonDetails: [PokemonDetail] = .init()
     var coordinator: AppCoordinatorProtocol
     var repository: PokedexRepositoryProtocol
     var pokemon: Pokemon? {
         didSet {
+            pokemonImage = pokemon?.sprites?.frontDefault ?? .init()
             pokemonName = pokemon?.name?.uppercaseFirstLetter() ?? .init()
             generatePokemonDetails()
         }

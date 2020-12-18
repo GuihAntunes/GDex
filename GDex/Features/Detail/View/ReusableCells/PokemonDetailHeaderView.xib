@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PokemonDetailHeaderView" customModule="GDex" customModuleProvider="target">
+            <connections>
+                <outlet property="largeImageView" destination="fdx-Ie-TiB" id="i7b-Tv-AE8"/>
+                <outlet property="mainImageView" destination="lF4-Ut-DvZ" id="7QV-Zz-nms"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleAspectFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fdx-Ie-TiB">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                </imageView>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIN-38-2uN">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="4Gc-FJ-ndR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KNC-ck-4RI">
+                                <rect key="frame" x="0.0" y="0.0" width="174" height="172"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="toC-i4-575">
+                                    <rect key="frame" x="0.0" y="0.0" width="174" height="172"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <vibrancyEffect>
+                                    <blurEffect style="regular"/>
+                                </vibrancyEffect>
+                            </visualEffectView>
+                        </subviews>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lF4-Ut-DvZ">
+                    <rect key="frame" x="167" y="110" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="lF4-Ut-DvZ" secondAttribute="height" id="7bZ-4d-NLk"/>
+                        <constraint firstAttribute="height" constant="80" id="Ndo-kH-mrO"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="MIN-38-2uN" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Arf-yz-JwJ"/>
+                <constraint firstItem="lF4-Ut-DvZ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Dfk-QE-U5B"/>
+                <constraint firstItem="MIN-38-2uN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Fmh-9h-C1a"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MIN-38-2uN" secondAttribute="trailing" id="GNH-GH-40w"/>
+                <constraint firstAttribute="bottom" secondItem="MIN-38-2uN" secondAttribute="bottom" id="M8s-wO-gfH"/>
+                <constraint firstItem="fdx-Ie-TiB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WXE-sM-mwb"/>
+                <constraint firstAttribute="bottom" secondItem="fdx-Ie-TiB" secondAttribute="bottom" id="b4F-t1-6mm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fdx-Ie-TiB" secondAttribute="trailing" id="ekD-97-1oA"/>
+                <constraint firstItem="lF4-Ut-DvZ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="tou-Hs-bEb"/>
+                <constraint firstItem="fdx-Ie-TiB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="zEJ-Rn-iUu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="68" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

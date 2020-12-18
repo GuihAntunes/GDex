@@ -26,4 +26,10 @@ extension PokemonDetailsViewController: UITableViewDataSource, UITableViewDelega
         return UITableView.automaticDimension
     }
     
+    func setupHeaderView() {
+        let headerView = PokemonDetailHeaderView(frame: CGRect(origin: pokemonTableView.frame.origin, size: CGSize(width: view.frame.width, height: 300)))
+        headerView.setupHeaderView(withURLString: viewModel?.pokemonImage ?? .init())
+        pokemonTableView.tableHeaderView = headerView
+    }
+    
 }

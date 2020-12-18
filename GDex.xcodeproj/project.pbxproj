@@ -10,6 +10,8 @@
 		0E68D286258D1921002D6AB5 /* PokedexListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E68D285258D1921002D6AB5 /* PokedexListViewModelTests.swift */; };
 		0E68D28C258D197E002D6AB5 /* TestsUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E68D28B258D197E002D6AB5 /* TestsUtils.swift */; };
 		0E68D294258D1AFC002D6AB5 /* Pokemons.json in Resources */ = {isa = PBXBuildFile; fileRef = 0E68D293258D1AFC002D6AB5 /* Pokemons.json */; };
+		0E73901A258D20E100DB412C /* PokemonDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E739019258D20E100DB412C /* PokemonDetailHeaderView.swift */; };
+		0E73901E258D20EC00DB412C /* PokemonDetailHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E73901D258D20EC00DB412C /* PokemonDetailHeaderView.xib */; };
 		0EDFFA32258AB75A000507F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFA31258AB75A000507F3 /* AppDelegate.swift */; };
 		0EDFFA36258AB75A000507F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDFFA35258AB75A000507F3 /* ViewController.swift */; };
 		0EDFFA39258AB75A000507F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EDFFA37258AB75A000507F3 /* Main.storyboard */; };
@@ -77,6 +79,8 @@
 		0E68D285258D1921002D6AB5 /* PokedexListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexListViewModelTests.swift; sourceTree = "<group>"; };
 		0E68D28B258D197E002D6AB5 /* TestsUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestsUtils.swift; sourceTree = "<group>"; };
 		0E68D293258D1AFC002D6AB5 /* Pokemons.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Pokemons.json; sourceTree = "<group>"; };
+		0E739019258D20E100DB412C /* PokemonDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailHeaderView.swift; sourceTree = "<group>"; };
+		0E73901D258D20EC00DB412C /* PokemonDetailHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonDetailHeaderView.xib; sourceTree = "<group>"; };
 		0EDFFA2E258AB75A000507F3 /* GDex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDFFA31258AB75A000507F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EDFFA35258AB75A000507F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -421,6 +425,8 @@
 			children = (
 				0EF77709258CF7E700169210 /* PokemonTableViewCell.swift */,
 				0EF7770A258CF7E700169210 /* PokemonTableViewCell.xib */,
+				0E739019258D20E100DB412C /* PokemonDetailHeaderView.swift */,
+				0E73901D258D20EC00DB412C /* PokemonDetailHeaderView.xib */,
 			);
 			path = ReusableCells;
 			sourceTree = "<group>";
@@ -536,6 +542,7 @@
 				0EDFFA3E258AB75C000507F3 /* LaunchScreen.storyboard in Resources */,
 				0EDFFA7E258AB841000507F3 /* Localizable.strings in Resources */,
 				0EF7770C258CF7E700169210 /* PokemonTableViewCell.xib in Resources */,
+				0E73901E258D20EC00DB412C /* PokemonDetailHeaderView.xib in Resources */,
 				0EDFFA3B258AB75C000507F3 /* Assets.xcassets in Resources */,
 				0EDFFA39258AB75A000507F3 /* Main.storyboard in Resources */,
 				0EF776EA258CE25D00169210 /* PokedexTableViewCell.xib in Resources */,
@@ -638,6 +645,7 @@
 				0EDFFAA0258AB9FC000507F3 /* ImagesNames.swift in Sources */,
 				0EDFFA9B258AB9C6000507F3 /* UIColor+NamedColors.swift in Sources */,
 				0EDFFB17258AC6E4000507F3 /* MainFilters.swift in Sources */,
+				0E73901A258D20E100DB412C /* PokemonDetailHeaderView.swift in Sources */,
 				0EDFFAB4258ABACB000507F3 /* UITableView+QuickDeQueue.swift in Sources */,
 				0EDFFACA258ABD41000507F3 /* AppAppearance.swift in Sources */,
 				0EDFFB1D258AC770000507F3 /* PokedexService.swift in Sources */,

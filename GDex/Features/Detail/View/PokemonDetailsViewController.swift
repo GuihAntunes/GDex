@@ -47,6 +47,7 @@ class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate 
     
     // MARK: - Setup Methods
     func prepareUI() {
+        setupHeaderView()
         view.backgroundColor = UIColor(named: UIColor.AppColors.appBackgroundColor.rawValue)
         pokemonTableView.reloadData()
         customNavigationBar.setTitle(viewModel?.pokemonName ?? .init())
