@@ -13,18 +13,21 @@ class PokedexListViewController: UIViewController {
     // MARK: - Properties
     var pokemonsTableView: UITableView
     weak var viewModel: PokedexListViewModelProtocol?
+    lazy var customNavigationBar = CustomNavigationBar(frame: CGRect(origin: .zero, size: CGSize(width: view.frame.size.width, height: 44)))
     
     // MARK: - Initializers
     init(withTableView tableView: UITableView, andViewModel viewModel: PokedexListViewModelProtocol?) {
         self.pokemonsTableView = tableView
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
+        view.backgroundColor = UIColor(named: UIColor.AppColors.navigationBarColor.rawValue)
     }
     
     required init?(coder: NSCoder) {
         self.pokemonsTableView = UITableView(frame: UIScreen.main.bounds, style: .plain)
         self.viewModel = nil
         super.init(coder: coder)
+        view.backgroundColor = UIColor(named: UIColor.AppColors.navigationBarColor.rawValue)
     }
     
     // MARK: - View's Life Cycle
@@ -36,7 +39,6 @@ class PokedexListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        setupNavigationBar()
     }
     
     // MARK: - Setup Methods
@@ -47,6 +49,7 @@ class PokedexListViewController: UIViewController {
     
     func setupController() {
         setupTableView()
+        setupNavigationBar()
         setupConstraints()
     }
     
@@ -62,7 +65,11 @@ class PokedexListViewController: UIViewController {
     
     private func setupConstraints() {
         NSLayoutConstraint.activate([
-            pokemonsTableView.topAnchor.constraint(equalTo: view.topAnchor),
+            customNavigationBar.topAnchor.constraint(equalToSystemSpacingBelow: view.layoutMarginsGuide.topAnchor, multiplier: 0),
+            customNavigationBar.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            customNavigationBar.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            customNavigationBar.heightAnchor.constraint(equalToConstant: 44),
+            pokemonsTableView.topAnchor.constraint(equalTo: customNavigationBar.bottomAnchor),
             pokemonsTableView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             pokemonsTableView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             pokemonsTableView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
@@ -72,7 +79,11 @@ class PokedexListViewController: UIViewController {
     }
     
     private func setupNavigationBar() {
-        navigationController?.setNavigationBarHidden(false, animated: false)
+        customNavigationBar.translatesAutoresizingMaskIntoConstraints = false
+        customNavigationBar.showBackButton(false)
+        customNavigationBar.backgroundColor = .clear
+        view.addSubview(customNavigationBar)
+        customNavigationBar.setTitle(LocalizableStrings.pokedexListTitle.localize())
     }
 
 }

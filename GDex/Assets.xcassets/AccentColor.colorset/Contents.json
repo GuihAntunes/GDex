@@ -7,7 +7,7 @@
           "alpha" : "1.000",
           "blue" : "0.643",
           "green" : "0.341",
-          "red" : "0.268"
+          "red" : "0.267"
         }
       },
       "idiom" : "universal"
@@ -25,7 +25,7 @@
           "alpha" : "1.000",
           "blue" : "0.643",
           "green" : "0.341",
-          "red" : "0.268"
+          "red" : "0.267"
         }
       },
       "idiom" : "universal"
@@ -34,5 +34,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "localizable" : true
   }
 }

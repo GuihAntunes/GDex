@@ -58,7 +58,7 @@
     <resources>
         <image name="backArrow" width="170.5" height="170.5"/>
         <namedColor name="AccentColor">
-            <color red="0.26800000667572021" green="0.34099999070167542" blue="0.64300000667572021" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.26666666666666666" green="0.3411764705882353" blue="0.64313725490196072" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
     </resources>
 </document>

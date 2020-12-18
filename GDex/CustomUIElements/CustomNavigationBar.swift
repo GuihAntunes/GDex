@@ -60,4 +60,8 @@ class CustomNavigationBar: UIView {
         titleLabel?.text = title
     }
     
+    func showBackButton(_ show: Bool) {
+        backButton?.isHidden = !show
+    }
+    
 }

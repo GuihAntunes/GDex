@@ -19,6 +19,7 @@ class AppCoordinatorDependencyInjector {
     // MARK: - Main Navigation
     lazy var navigationController: UINavigationController = {
         let navigation: UINavigationController = .init()
+        navigation.setNavigationBarHidden(true, animated: false)
         navigation.viewControllers.append(pokedexListController)
         return navigation
     }()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PokemonDetailsViewController: ViewController, CustomNavigationBarDelegate {
+class PokemonDetailsViewController: UIViewController, CustomNavigationBarDelegate {
     
     // MARK: - Properties
     weak var viewModel: PokemonDetailsViewModelProtocol?
